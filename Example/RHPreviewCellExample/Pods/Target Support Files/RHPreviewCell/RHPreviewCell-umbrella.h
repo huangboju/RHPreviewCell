@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_RHPreviewCellExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_RHPreviewCellExampleVersionString[];
+FOUNDATION_EXPORT double RHPreviewCellVersionNumber;
+FOUNDATION_EXPORT const unsigned char RHPreviewCellVersionString[];
 
