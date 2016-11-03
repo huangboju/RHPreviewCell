@@ -37,22 +37,22 @@
 		111883ED224925E3B9F7B6EE8ED0797A /* Pods-RHPreviewCellExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RHPreviewCellExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		26FC99AD1B346A73CBF55F0D7F148607 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF3F823C4AD90192363B928117AC67A /* Pods-RHPreviewCellExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHPreviewCellExample.debug.xcconfig"; sourceTree = "<group>"; };
-		31608958DE9B368A85DF3D94F2CC3113 /* Pods_RHPreviewCellExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RHPreviewCellExample.framework; path = "Pods-RHPreviewCellExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31608958DE9B368A85DF3D94F2CC3113 /* Pods_RHPreviewCellExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHPreviewCellExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3887F7D833D1715E68C845B7E652F9FA /* RHPreviewTableViewCellTilesAnimationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RHPreviewTableViewCellTilesAnimationProtocol.swift; path = RHPReviewCell/RHPreviewCellSource/RHPreviewTableViewCellTilesAnimationProtocol.swift; sourceTree = "<group>"; };
 		3FC5D8C576DDFB8BB4399A3BFE62E548 /* RHPreviewTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RHPreviewTableViewCell.swift; path = RHPReviewCell/RHPreviewCellSource/RHPreviewTableViewCell.swift; sourceTree = "<group>"; };
 		49CCC658E365E6A6AE16E0C84CE13E04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B17AD72160DBC5785DDE3C472E24E1B /* RHPreviewCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RHPreviewCell-prefix.pch"; sourceTree = "<group>"; };
-		68324332406301E4EE1AD23ED8744156 /* RHPreviewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RHPreviewCell.framework; path = RHPreviewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68324332406301E4EE1AD23ED8744156 /* RHPreviewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RHPreviewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7867A41EA213F110B29FA80FBD28E39F /* Pods-RHPreviewCellExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RHPreviewCellExample-dummy.m"; sourceTree = "<group>"; };
 		8A85F9DAB7AC472F1DDED8342AA32E62 /* RHPreviewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RHPreviewCell-dummy.m"; sourceTree = "<group>"; };
-		9126E067D77213EE2731E89DF698C384 /* RHPreviewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RHPreviewCell.modulemap; sourceTree = "<group>"; };
+		9126E067D77213EE2731E89DF698C384 /* RHPreviewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RHPreviewCell.modulemap; sourceTree = "<group>"; };
 		9283A653551F27338F9C5F51462415C6 /* RHPreviewTileView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RHPreviewTileView.swift; path = RHPReviewCell/RHPreviewCellSource/RHPreviewTileView.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96DE3A4C51EDEA2472223786232BE452 /* RHPreviewTilesContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RHPreviewTilesContainerView.swift; path = RHPReviewCell/RHPreviewCellSource/RHPreviewTilesContainerView.swift; sourceTree = "<group>"; };
 		998FEE8EA81CBF8FC51F8E45194A0D74 /* Pods-RHPreviewCellExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RHPreviewCellExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BDEAB4536D47A6CA23C72533841A3D56 /* RHPreviewCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RHPreviewCell-umbrella.h"; sourceTree = "<group>"; };
 		C43E73C1B3F6F322C9BDE8577DEA3AE3 /* RHPreviewTableViewCellTilesAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RHPreviewTableViewCellTilesAnimator.swift; path = RHPReviewCell/RHPreviewCellSource/RHPreviewTableViewCellTilesAnimator.swift; sourceTree = "<group>"; };
-		C7F715C7E44EC89999C4497D7585D422 /* Pods-RHPreviewCellExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RHPreviewCellExample.modulemap"; sourceTree = "<group>"; };
+		C7F715C7E44EC89999C4497D7585D422 /* Pods-RHPreviewCellExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RHPreviewCellExample.modulemap"; sourceTree = "<group>"; };
 		CAC119EAB5482BF436E9B6F233E52B58 /* Pods-RHPreviewCellExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RHPreviewCellExample-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E301C8E55D2CD57F3B5A654123D88EA9 /* Pods-RHPreviewCellExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHPreviewCellExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,7 +97,6 @@
 				9283A653551F27338F9C5F51462415C6 /* RHPreviewTileView.swift */,
 				E99F6DC1B63422272DFF8FA09C38623F /* Support Files */,
 			);
-			name = RHPreviewCell;
 			path = RHPreviewCell;
 			sourceTree = "<group>";
 		};
@@ -241,6 +240,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					5CEE3424F6D522F5E7AB7C00961A84B5 = {
+						LastSwiftMigration = 0810;
+					};
+					C27A09E382404B74604430E665F71EDF = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -363,7 +370,7 @@
 				PRODUCT_NAME = RHPreviewCell;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -396,7 +403,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -473,6 +480,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -508,6 +516,7 @@
 				PRODUCT_NAME = Pods_RHPreviewCellExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

@@ -10,44 +10,43 @@ import UIKit
 
 class RHPreviewTableViewCellTilesAnimator: RHPreviewTableViewCellTilesAnimationProtocol {
     
-    func performShowAnimation(tiles tiles: [RHPreviewTileView], completion: RHTilesAnimationComplitionBlock) {
+    func performShowAnimation(tiles: [RHPreviewTileView], completion: @escaping RHTilesAnimationComplitionBlock) {
         for tile in tiles {
-            tile.hidden = false
-            UIView.animateWithDuration(0.3,
-                                       animations: {
-                                        tile.alpha = CGFloat(0.3)
-            }) { _ in
+            tile.isHidden = false
+            UIView.animate(withDuration: 0.3, animations: {
+                tile.alpha = CGFloat(0.3)
+            }, completion: { _ in
                 if tile == tiles.last {
                     completion()
                 }
-            }
+            })
         }
     }
     
-    func performHideAnimation(tiles tiles: [RHPreviewTileView], completion: RHTilesAnimationComplitionBlock) {
+    func performHideAnimation(tiles: [RHPreviewTileView], completion: @escaping RHTilesAnimationComplitionBlock) {
         for tile in tiles {
-            UIView.animateWithDuration(0.2,
+            UIView.animate(withDuration: 0.2,
                                        animations: {
                                         tile.alpha = CGFloat(0.0)
-            }) { _ in
-                tile.hidden = true
+            }, completion: { _ in
+                tile.isHidden = true
                 
                 if tile == tiles.last {
                     completion()
                 }
-            }
+            }) 
         }
     }
     
-    func performMagnifyAnimation(tile tile: RHPreviewTileView) {
-        UIView.animateWithDuration(0.5,
+    func performMagnifyAnimation(tile: RHPreviewTileView) {
+        UIView.animate(withDuration: 0.5,
                                    delay: 0,
                                    usingSpringWithDamping: 0.4,
                                    initialSpringVelocity: 0.9,
-                                   options: UIViewAnimationOptions.CurveEaseInOut,
+                                   options: UIViewAnimationOptions(),
                                    animations: {
                                     let scale = CGFloat(0.89)
-                                    tile.transform = CGAffineTransformMakeScale(scale, scale)
+                                    tile.transform = CGAffineTransform(scaleX: scale, y: scale)
             }, completion: nil)
     }
 }

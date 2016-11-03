@@ -7,7 +7,7 @@
 //
 
 protocol RHPreviewTableViewCellTilesAnimationProtocol {
-    func performShowAnimation(tiles tiles: [RHPreviewTileView], completion: RHTilesAnimationComplitionBlock)
-    func performHideAnimation(tiles tiles: [RHPreviewTileView], completion: RHTilesAnimationComplitionBlock)
-    func performMagnifyAnimation(tile tile: RHPreviewTileView)
+    func performShowAnimation(tiles: [RHPreviewTileView], completion: @escaping RHTilesAnimationComplitionBlock)
+    func performHideAnimation(tiles: [RHPreviewTileView], completion: @escaping RHTilesAnimationComplitionBlock)
+    func performMagnifyAnimation(tile: RHPreviewTileView)
 }
