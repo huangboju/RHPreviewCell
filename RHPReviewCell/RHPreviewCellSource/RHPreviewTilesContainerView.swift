@@ -11,28 +11,28 @@ import UIKit
 typealias RHTilesAnimationComplitionBlock = ()->()
 
 public enum RHTappedTileIndexValue {
-    case TileTapped(Int)
-    case FingerReleased
+    case tileTapped(Int)
+    case fingerReleased
 }
 
 public protocol RHPreviewCellDelegate: class {
-   func previewCell(cell: RHPreviewTableViewCell, didSelectTileAtIndex indexValue: RHTappedTileIndexValue)
+   func previewCell(_ cell: RHPreviewTableViewCell, didSelectTileAtIndex indexValue: RHTappedTileIndexValue)
 }
 
 public protocol RHPreviewCellDataSource: class {
-    func previewCellNumberOfTiles(cell: RHPreviewTableViewCell) -> Int
-    func previewCell(cell: RHPreviewTableViewCell, tileForIndex: Int) -> RHPreviewTileView
+    func previewCellNumberOfTiles(_ cell: RHPreviewTableViewCell) -> Int
+    func previewCell(_ cell: RHPreviewTableViewCell, tileForIndex: Int) -> RHPreviewTileView
 }
 
 
 class RHPreviewTilesContainerView: UIView {
-    private let tilesAnimator: RHPreviewTableViewCellTilesAnimator
-    private var tiles = [RHPreviewTileView]()
+    fileprivate let tilesAnimator: RHPreviewTableViewCellTilesAnimator
+    fileprivate var tiles = [RHPreviewTileView]()
 
     var selectedTileIndex = -1 {
         didSet(oldValue) {
             if (oldValue >= 0) {
-                tiles[oldValue].transform = CGAffineTransformIdentity
+                tiles[oldValue].transform = CGAffineTransform.identity
             }
             
             if oldValue != selectedTileIndex && selectedTileIndex >= 0 {
@@ -73,7 +73,7 @@ class RHPreviewTilesContainerView: UIView {
         addTilesAsSubview()
     }
     
-    func gestureOffset(point: CGPoint) {
+    func gestureOffset(_ point: CGPoint) {
         // If tile has not been found it means that user finger wasn't above one of tile, we treat this situation as a 'Cancel'
         guard let tile = getTileFrom(point: point) else {
             selectedTileIndex = -1
@@ -83,11 +83,11 @@ class RHPreviewTilesContainerView: UIView {
         selectedTileIndex = getIndex(of: tile)
     }
     
-    func hideElements(completion: RHTilesAnimationComplitionBlock) {
+    func hideElements(_ completion: @escaping RHTilesAnimationComplitionBlock) {
         tilesAnimator.performHideAnimation(tiles: tiles, completion: completion)
     }
     
-    func showElements(completion: RHTilesAnimationComplitionBlock) {
+    func showElements(_ completion: @escaping RHTilesAnimationComplitionBlock) {
         let completionBlock = { [weak self] in
             self?.resetPresenterState()
             completion()
@@ -102,7 +102,7 @@ private extension RHPreviewTilesContainerView {
     func addTilesAsSubview() {
         _ = tiles.map {
             addSubview($0)
-            $0.hidden = true
+            $0.isHidden = true
             $0.alpha = 0
         }
     }
@@ -124,14 +124,14 @@ private extension RHPreviewTilesContainerView {
         }
     }
     
-    func getTileFrom(point point: CGPoint) -> RHPreviewTileView? {
+    func getTileFrom(point: CGPoint) -> RHPreviewTileView? {
         var resultTile: RHPreviewTileView?
         
         for tile in tiles {
             tile.setSeleted(false)
             
-            let convertedRect = convertRect(tile.frame, toView: self)
-            if CGRectContainsPoint(convertedRect, point) {
+            let convertedRect = convert(tile.frame, to: self)
+            if convertedRect.contains(point) {
                 tile.setSeleted(true)
                 resultTile = tile
             }
@@ -140,12 +140,12 @@ private extension RHPreviewTilesContainerView {
         return resultTile
     }
     
-    func performMagnify(tile: RHPreviewTileView) {
+    func performMagnify(_ tile: RHPreviewTileView) {
         tilesAnimator.performMagnifyAnimation(tile: tile)
     }
     
     func getIndex(of tile: RHPreviewTileView) -> Int {
-        return tiles.indexOf(tile) ?? 0
+        return tiles.index(of: tile) ?? 0
     }
     
     func resetPresenterState() {
